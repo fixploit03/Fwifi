@@ -26,7 +26,7 @@ try:
                 print(f"\n[-] Terjadi kesalahan: {e}.")
                 exit(1)
         if not kata_sandi_ditemukan:
-            print(f"[-] Kata sandi tidak ditemukan, coba file Wordlist yang lain.{r}")
+            print(f"[-] Kata sandi tidak ditemukan, coba file Wordlist yang lain.")
 except Exception as e:
     print(f"\n[-] Terjadi kesalahan: {e}.")
     exit(1)
