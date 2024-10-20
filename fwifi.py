@@ -20,13 +20,13 @@ try:
                 else:
                     print(f"[+] Gagal terhubung ke SSID '{ssid}'")
             except KeyboardInterrupt:
-                print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
+                print(f"\n[-] Program dihentikan oleh pengguna.")
                 exit(1)
             except Exception as e:
-                print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
+                print(f"\n[-] Terjadi kesalahan: {e}.")
                 exit(1)
         if not kata_sandi_ditemukan:
-            print(f"{p}[{m}-{p}] Kata sandi tidak ditemukan, coba file Wordlist yang lain.{r}")
+            print(f"[-] Kata sandi tidak ditemukan, coba file Wordlist yang lain.{r}")
 except Exception as e:
-    print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
+    print(f"\n[-] Terjadi kesalahan: {e}.")
     exit(1)
