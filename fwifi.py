@@ -4,6 +4,8 @@ interface = "<_interface_>"
 ssid = "<_ssid_>"
 wordlist = "<_wordlist_>"
 
+kata_sandi_ditemukan = False
+
 try:
     with open(wordlist, "r", encoding="latin-1", errors="ignore") as w:
         daftar_kata_sandi = w.read().splitlines()
