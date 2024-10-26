@@ -14,16 +14,21 @@ try:
                 crack_wifi = subprocess.run(perintah_crack_wifi, shell=True, capture_output=True, text=True)
                 if "successfully activated" in crack_wifi.stdout:
                     print(f"""
+-------------------------------------------------
 [+] SSID : {ssid}
 [+] Kata Sandi : {kata_sandi}
-[+] Status : Berhasil terhubung ke jaringan Wi-Fi""")
+[+] Status : Berhasil terhubung ke jaringan Wi-Fi
+-------------------------------------------------
+""")
                     kata_sandi_ditemukan = True 
                     break
                 else:
                     print(f"""
+-------------------------------------------------
 [-] SSID : {ssid}
 [-] Kata Sandi : {kata_sandi}
 [-] Status : Gagal terhubung ke jaringan Wi-Fi
+-------------------------------------------------
 """)
             except KeyboardInterrupt:
                 print(f"\n[-] Program dihentikan oleh pengguna.")
