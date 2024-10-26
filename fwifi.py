@@ -16,8 +16,7 @@ try:
                     print(f"""
 [+] SSID : {ssid}
 [+] Kata Sandi : {kata_sandi}
-[+] Status : Berhasil terhubung ke jaringan Wi-Fi
-""")
+[+] Status : Berhasil terhubung ke jaringan Wi-Fi""")
                     kata_sandi_ditemukan = True 
                     break
                 else:
