@@ -22,8 +22,8 @@ try:
                     break
                 else:
                     print(f"""
-[+] SSID : {ssid}
-[+] Kata Sandi : {kata_sandi}
+[-] SSID : {ssid}
+[-] Kata Sandi : {kata_sandi}
 [-] Status : Gagal terhubung ke jaringan Wi-Fi
 """)
             except KeyboardInterrupt:
